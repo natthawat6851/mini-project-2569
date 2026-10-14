@@ -236,6 +236,34 @@ main {
     gap: 22px;
 }
 
+.activity {
+    margin-top: 25px;
+}
+
+.activity-card p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.activity-card {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    border-bottom: 1px solid var(--teal);
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.activity-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #d7f3ed;
+    background-color: var(--mint);
+    align-self: center;
+    margin-bottom: 15px;
+}
+
 .contact-card {
     display: flex;
     align-items: center;
@@ -381,6 +409,10 @@ footer {
     .info-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .activity-card {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
@@ -445,5 +477,9 @@ footer {
 
     .project-image {
         height: 200px;
+    }
+
+    .activity-card p {
+        font-size: 16px;
     }
 }
